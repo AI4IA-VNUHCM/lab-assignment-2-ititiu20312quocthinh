@@ -20,6 +20,29 @@ int main(int argc, char *argv[]) {
 	int result;
 	//Your codes here
 	
+	#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(int argc, char *argv[]) ;{
+	//testing variable, applying it to your algorithm for auto-evaluating
+	int n = atoi(argv[1]);
+	int result = 1;
+	int i;
+	//Your codes here
+	if(n % 2 != 0)
+	{
+		for(i = 1;i <= n;i += 2)
+		    result *= i;
+	}
+	else
+	{
+		for(i = 2;i <= n;i += 2)
+		    result *= i;
+	}
+	printf("%d", result);
+	return 0;
+}
 	printf("%d", result);
 	return 0;
 }

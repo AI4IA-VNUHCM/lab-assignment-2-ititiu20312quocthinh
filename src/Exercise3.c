@@ -17,5 +17,19 @@ int main(int argc, char *argv[]) {
 	//Your codes here
 	
 	
-	return 0;
+    int n, i;
+    printf("Enter number n = ");
+    scanf("%d", &n);
+ 
+    printf("%d = ", n);
+ 
+    for (i = 2; i <= n; i++) {
+        while(n % i == 0) {
+            printf("%d.", i);
+            n /= i;
+        }
+    }
+ 
+    return 0;
 }
+    
